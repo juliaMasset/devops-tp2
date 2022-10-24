@@ -35,13 +35,16 @@ build-and-push-docker-image:
    - name: Checkout code
      uses: actions/checkout@v2
 
+   - name: Login to DockerHub
+   run: docker login -u ${{ secrets.DOCKER_HUB_JULIA }} -p ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+
    - name: Build image and push backend
      uses: docker/build-push-action@v2 
      with:
        # relative path to the place where source code with Dockerfile is located
        context: ./simple-api
        # Note: tags has to be all lower-case
-       tags:  ${{secrets.DOCKER_HUB_JULIA}}/correction-tp1-devops/simple-api
+       tags:  ${{secrets.DOCKER_HUB_JULIA}}/devops-tp2:simple-api
 
    - name: Build image and push database
      uses: docker/build-push-action@v2 
@@ -49,7 +52,7 @@ build-and-push-docker-image:
        # relative path to the place where source code with Dockerfile is located
        context: ./database
        # Note: tags has to be all lower-case
-       tags:  ${{secrets.DOCKER_HUB_JULIA}}/correction-tp1-devops/database
+       tags:  ${{secrets.DOCKER_HUB_JULIA}}/devops-tp2:database
 
    - name: Build image and push httpd
      uses: docker/build-push-action@v2 
@@ -57,7 +60,5 @@ build-and-push-docker-image:
        # relative path to the place where source code with Dockerfile is located
        context: ./httpd
        # Note: tags has to be all lower-case
-       tags:  ${{secrets.DOCKER_HUB_JULIA}}/correction-tp1-devops/httpd
+       tags:  ${{secrets.DOCKER_HUB_JULIA}}/devops-tp2:httpd
 
-   - name: Login to DockerHub
-     run: docker login -u ${{ secrets.DOCKER_HUB_JULIA }} -p ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
