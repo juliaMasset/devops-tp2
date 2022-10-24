@@ -1,0 +1,10 @@
+/Users/jmt/Documents/EPF/5A/correction-tp1-devops/simple-api/src/main/java/fr/takima/training/simpleapi/controller/StudentController.java
+/Users/jmt/Documents/EPF/5A/correction-tp1-devops/simple-api/src/main/java/fr/takima/training/simpleapi/controller/DepartmentController.java
+/Users/jmt/Documents/EPF/5A/correction-tp1-devops/simple-api/src/main/java/fr/takima/training/simpleapi/service/DepartmentService.java
+/Users/jmt/Documents/EPF/5A/correction-tp1-devops/simple-api/src/main/java/fr/takima/training/simpleapi/SimpleApiApplication.java
+/Users/jmt/Documents/EPF/5A/correction-tp1-devops/simple-api/src/main/java/fr/takima/training/simpleapi/dao/StudentDAO.java
+/Users/jmt/Documents/EPF/5A/correction-tp1-devops/simple-api/src/main/java/fr/takima/training/simpleapi/entity/Student.java
+/Users/jmt/Documents/EPF/5A/correction-tp1-devops/simple-api/src/main/java/fr/takima/training/simpleapi/service/StudentService.java
+/Users/jmt/Documents/EPF/5A/correction-tp1-devops/simple-api/src/main/java/fr/takima/training/simpleapi/entity/Department.java
+/Users/jmt/Documents/EPF/5A/correction-tp1-devops/simple-api/src/main/java/fr/takima/training/simpleapi/dao/DepartmentDAO.java
+/Users/jmt/Documents/EPF/5A/correction-tp1-devops/simple-api/src/main/java/fr/takima/training/simpleapi/controller/GreetingController.java
