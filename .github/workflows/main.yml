@@ -36,7 +36,7 @@ build-and-push-docker-image:
      uses: actions/checkout@v2
 
    - name: Login to DockerHub
-   run: docker login -u ${{ secrets.DOCKER_HUB_JULIA }} -p ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+     run: docker login -u ${{ secrets.DOCKER_HUB_JULIA }} -p ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
    - name: Build image and push backend
      uses: docker/build-push-action@v2 
