@@ -42,7 +42,6 @@ build-and-push-docker-image:
        context: ./simple-api
        # Note: tags has to be all lower-case
        tags:  ${{secrets.DOCKER_HUB_JULIA}}/correction-tp1-devops/simple-api
-        push: ${{ github.ref == 'refs/heads/main' }}
 
    - name: Build image and push database
      uses: docker/build-push-action@v2 
