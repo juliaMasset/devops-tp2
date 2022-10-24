@@ -25,7 +25,7 @@ jobs:
         run: mvn clean verify --file .simple-api/pom.xml
 
 # define job to build and publish docker image
-build-and-push-docker-image:
+test-simple-api:
 needs: test-backend
 # run only when code is compiling and tests are passing
 runs-on: ubuntu-latest
