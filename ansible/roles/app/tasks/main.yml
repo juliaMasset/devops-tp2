@@ -1,0 +1,7 @@
+- name: Run app
+  docker_container:
+    name: backend
+    image: juliamasset/devops-tp2:simple-api
+    state: started
+    networks:
+      - name: app-network

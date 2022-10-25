@@ -1,0 +1,8 @@
+- name: Run HTTPD
+  docker_container:
+    name: httpd
+    image: juliamasset/devops-tp2:httpd
+    networks:
+      - name: app-network
+    ports:
+      - 80:80
